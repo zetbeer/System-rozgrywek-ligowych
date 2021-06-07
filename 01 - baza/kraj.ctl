@@ -1,0 +1,8 @@
+LOAD DATA
+INFILE 'kraj.csv'
+BADFILE 'kraj.bad'
+DISCARDFILE 'kraj.dsc'
+REPLACE INTO TABLE kraj
+FIELDS TERMINATED BY ','
+TRAILING NULLCOLS
+(id, nazwa)

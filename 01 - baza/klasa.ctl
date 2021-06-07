@@ -1,0 +1,8 @@
+LOAD DATA
+INFILE 'klasa.csv'
+BADFILE 'klasa.bad'
+DISCARDFILE 'klasa.dsc'
+REPLACE INTO TABLE klasa
+FIELDS TERMINATED BY ','
+TRAILING NULLCOLS
+(id, nazwa)

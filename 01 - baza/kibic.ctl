@@ -1,0 +1,8 @@
+LOAD DATA
+INFILE 'kibic.csv'
+BADFILE 'kibic.bad'
+DISCARDFILE 'kibic.dsc'
+REPLACE INTO TABLE kibic
+FIELDS TERMINATED BY ','
+TRAILING NULLCOLS
+(id, imie, nazwisko)
